@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Ahorcado!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>
+            <img src="assets/img/logo.svg" alt="logo alura">
+        </h1>
+    </header>
+
+    <main>
+        <!-- Botones de inicio para jugar -->
+        <section class="iniciar">
+            <button class="iniciar__btnJuego" id="btnIniciarJuego">Iniciar Juego</button>
+            <button class="iniciar__btnNuevaPalabra" id="btnAgregarNuevaPalabra">Agregar nueva palabra</button>
+        </section>
+
+        <!-- Parte del Ahorcado -->
+        <section class="ahorcado ocultar">
+            <canvas id="myCanvas" width="600" height="600">
+
+            </canvas>
+
+            <div class="ahorcado__botones">
+                <button class="ahorcado__btn">Nuevo Juego</button>
+                <button class="ahorcado__btn ahorcado__btn--desistir">Desistir</button>
+            </div>
+        </section>
+
+        <!-- Parte de Agregar Nueva Palabra -->
+        <section class="palabra ocultar">
+            <h1>Agregar Nueva Palabra</h1>
+        </section>
+
+    </main>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/canvas.js"></script>
+</body>
+</html>

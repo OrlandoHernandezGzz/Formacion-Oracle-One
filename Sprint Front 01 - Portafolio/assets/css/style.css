@@ -1,0 +1,31 @@
+/* base.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px 16px;
+}
+
+.app {
+    background: #F5F5F5;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "hero"
+    "sobre-mi"
+    "skills"
+    "aptitudes"
+    "formacion"
+    "experiencia"
+    "contacto"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 80px repeat(8, auto);
+
+    font-family: 'Raleway', sans-serif;
+}
+
+

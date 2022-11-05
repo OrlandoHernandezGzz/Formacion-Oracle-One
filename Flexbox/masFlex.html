@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas Flex</title>
+    <style>
+        .flexContainer:last-child { margin-top: 2em; }
+        body { margin: 0; padding: 0; }
+        div { height: 50px; width: 50px; }
+        div:nth-child(1) { background-color: red; width: 50px; height: 50px; }
+        div:nth-child(2) { background-color: blue; }
+        div:nth-child(3) { background-color: green; }
+        div:nth-child(4) { background-color: yellow; }
+        div:nth-child(5) { background-color: pink; }
+        div:nth-child(6) { background-color: black; }
+        div:nth-child(7) { background-color: orange; }
+        div:nth-child(8) { background-color: silver; }
+
+        .flexContainer {
+            /* height: 800px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column; */
+
+            display: flex;
+        }
+
+        .flexItem {
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        .primero {
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+
+            /* 
+                Se coloca un ancho especifico
+            */
+            /* flex-basis: 200px; */
+
+            /* 
+                Estas 3 se pueden reducir de la sig. forma:
+                grow - shrink - basis
+            */
+            flex: 0 1 200px;
+        }
+    </style>
+</head>
+<body>
+    <main class="flexContainer">
+        <div class="flexItem primeraRow primero"></div>
+        <div class="flexItem primeraRow"></div>
+        <div class="flexItem primeraRow"></div>
+        <div class="flexItem primeraRow"></div>
+    </main>
+
+</body>
+</html>

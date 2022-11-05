@@ -1,0 +1,8 @@
+.hero__img {
+    width: 100px;
+    height: 100px;
+    background-image: url("../../img/hero-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 360px;
+}

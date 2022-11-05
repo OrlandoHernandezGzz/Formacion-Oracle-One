@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+    /*
+        Escribe un programa que muestre el mensaje ¨Nuestra diferencia de edad es¨, concatenando el resultado de la diferencia de tu edad con la de tu hermano (o de un amigo).
+    */
+
+    function saltarLinea(){
+        document.write("<br><br><br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltarLinea();
+    }
+
+    var edadMia = 22;
+    var edadHermano = 12;
+
+    var diferenciaEdad = edadMia - edadHermano;
+    imprimir("Nuestra diferencia de edad es " + diferenciaEdad);
+
+</script>

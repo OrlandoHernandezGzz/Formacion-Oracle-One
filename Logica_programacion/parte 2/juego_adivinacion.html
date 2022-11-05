@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h1>Programa calcular IMC</h1>
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    var intentos = 3;
+    contador = 1;
+
+    while(contador <= intentos){
+        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+        if(numeroPensado == numeroLanzado){
+            alert("Usted acertó, en el intento " + contador + " el numero pensado era " + numeroPensado);
+        } else {
+            alert("Usted Fallo");
+        }
+
+        contador++;
+    }
+
+    if(numeroPensado == numeroLanzado){
+            imprimir("Usted acertó, en el intento " + intento + " el numero pensado era " + numeroPensado);
+        } else {
+            imprimir("Usted Fallo, el numero pensado era " + numeroPensado);
+        }
+
+    imprimir("Fin");
+</script>
